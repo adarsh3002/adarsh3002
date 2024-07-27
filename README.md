@@ -35,7 +35,7 @@
 
 <p align="left">
 <a href = "https://www.linkedin.com/in/adarsh-kumar-634740228/"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/></a>
-<a href = "https://leetcode.com/u/kumar47__/"><img src="https://img.icons8.com/?size=100&id=9L16NypUzu38&format=png&color=000000"/></a>
+<a href = "https://leetcode.com/u/kumar47__/"><img src="https://img.icons8.com/?size=25&id=9L16NypUzu38&format=png&color=000000"/></a>
 
 <a href = "https://www.instagram.com/__kumaradarsh_/"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
 
