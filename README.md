@@ -21,11 +21,11 @@
 <code><img height="40" src="https://i.giphy.com/media/eNAsjO55tPbgaor7ma/200w.webp"></code>
 <code><img height="40" src="https://upload.wikimedia.org/wikipedia/commons/0/00/Mongodb.png"></code>
 <code><img height="40" src="https://www.bacancytechnology.com/blog/wp-content/uploads/2016/12/nodejs-logo.png"></code>
-<code><img height="40" src="https://www.google.com/imgres?q=c%20programming%20icon&imgurl=https%3A%2F%2Fbanner2.cleanpng.com%2F20171217%2F033%2Fav2bv0zlf.webp&imgrefurl=https%3A%2F%2Fwww.cleanpng.com%2Fpng-letter-c-png-41332%2F&docid=KIx8zX4sNzwcUM&tbnid=0mm6QVq9eodJEM&vet=12ahUKEwiWhojxn8iHAxWowzgGHbPuBIYQM3oECFEQAA..i&w=900&h=660&hcb=2&ved=2ahUKEwiWhojxn8iHAxWowzgGHbPuBIYQM3oECFEQAA"></code>
+<code><img height="40" src="https://banner2.cleanpng.com/20171217/033/av2bv0zlf.webp"></code>
 <code><img height="40" src="https://w7.pngwing.com/pngs/46/626/png-transparent-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template-blue.png"></code>
 <code><img height="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png"></code>
 <code><img height="20" src="https://i.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.webp"></code>
-<code><img height="40" src="https://www.google.com/imgres?q=Octocat&imgurl=https%3A%2F%2Foctodex.github.com%2Fimages%2Forderedlistocat.png&imgrefurl=https%3A%2F%2Foctodex.github.com%2F&docid=Ja9lTI8RuBR25M&tbnid=6eqJcWGtCR4JKM&vet=12ahUKEwiFm-qnn8iHAxWf1jgGHRZzD88QM3oECGcQAA..i&w=896&h=896&hcb=2&ved=2ahUKEwiFm-qnn8iHAxWf1jgGHRZzD88QM3oECGcQAA"></code>
+<code><img height="40" src="https://octodex.github.com/images/ironcat.jpg"></code>
 <code><img height="40" src="https://4.bp.blogspot.com/-Fxo_qnGJBj0/WRoDPNdlEII/AAAAAAAABF0/1mSHmv5gleQaCsHKEDgTB3DbNghjCXvZACLcB/s1600/logo_firebase_1920px_clr.png"></code>
 <code><img height="40" src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"></code>
 <code><img height="40" src="https://logos-world.net/wp-content/uploads/2021/08/Amazon-Web-Services-AWS-Logo.png"></code>
