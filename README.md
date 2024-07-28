@@ -13,6 +13,37 @@
 
 - 📫 How to reach me **ak47kumaradarsh@gmail.com**
 
+<div align="center">
+<!--   <h2>🐍 My Contributions 🐍</h2> -->
+    <img src="https://i.postimg.cc/G36VZ3s4/standard.gif" alt="2825944"  width="1250" height="50">
+<hr/>
+    
+    
+    
+    
+[![GitHub Streak](https://streak-stats.demolab.com?user=adarsh3002&theme=transparent&hide_border=true&border_radius=0)](https://git.io/streak-stats)
+  
+ <picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/adarsh3002/adarsh3002/output/github-contribution-grid-snake-dark.svg"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/adarsh3002/adarsh3002/output/github-contribution-grid-snake.svg"
+  />
+  <img
+    alt="github contribution grid snake animation"
+    src="https://raw.githubusercontent.com/platane/adarsh3002/adarsh3002/github-contribution-grid-snake.svg"
+  />
+ </picture>
+  <br/>
+    
+  <br/><br/><br/>
+</div>
+
+<br>
+
 ## **TechStack:**
 
 <code><img height="40" src="https://i.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.webp"></code>
