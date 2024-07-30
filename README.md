@@ -11,7 +11,7 @@
 
 - 👯 I’m a **Full Stack Web Developer** and looking to collaborate on projects involving **Web Development**.
 
-- 📫 How to reach me **ak47kumaradarsh@gmail.com**
+- 📫 How to reach me **ak47kumaradarsh@gmail.com**. Alternative mail: **lit2021052@iiitl.ac.in**
 
 <div align="center">
 <!--   <h2>🐍 My Contributions 🐍</h2> -->
