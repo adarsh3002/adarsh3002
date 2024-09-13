@@ -44,10 +44,32 @@ jobs:
 
       - name: Deploy
         run: |
-          git config --global user.name 'github-actions[bot]' && \
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com' && \
-          # Error fix: https://stackoverflow.com/questions/62753648/rpc-failed-http-400-curl-22-the-requested-url-returned-error-400-bad-request
-          git config --global http.postBuffer 524288000 && \
-          git add . && \
-          git commit --no-verify --signoff --author "${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>" -m "Deploy generated images"
-          git push -fu "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY" HEAD:main --atomic
+
+        
+        
+          # git config --global user.name 'github-actions[bot]' && \
+          # git config --global user.email 'github-actions[bot]@users.noreply.github.com' && \
+          # # Error fix: https://stackoverflow.com/questions/62753648/rpc-failed-http-400-curl-22-the-requested-url-returned-error-400-bad-request
+          # git config --global http.postBuffer 524288000 && \
+          # git add . && \
+          # git commit --no-verify --signoff --author "${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>" -m "Deploy generated images"
+          # git push -fu "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY" HEAD:main --atomic
+
+
+
+
+          # Set up Git configuration
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global http.postBuffer 524288000
+          
+          # Check if there are any changes to commit
+          if [ -n "$(git status --porcelain)" ]; then
+            # There are changes, proceed with commit and push
+          git add .
+          git commit --no-verify --signoff --author "adarsh3002 <adarsh3002@users.noreply.github.com>" -m "Deploy generated images"
+          git push -fu "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY" HEAD:main --atomic
+          else
+          # No changes, skipping commit
+          echo "No changes to deploy"
+          fi
