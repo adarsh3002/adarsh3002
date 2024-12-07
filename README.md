@@ -45,7 +45,7 @@
 <br>
 
 ## **TechStack:**
-
+<p align="center">
 <code><img height="40" src="https://i.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.webp"></code>
 <code><img height="40" src="https://i.giphy.com/media/fsEaZldNC8A1PJ3mwp/giphy.webp"></code>
 <code> <img src="https://media3.giphy.com/media/ln7z2eWriiQAllfVcn/200w.webp" height="40"></code>
@@ -61,7 +61,7 @@
 <code><img height="40" src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"></code>
 <code><img height="40" src="https://logos-world.net/wp-content/uploads/2021/08/Amazon-Web-Services-AWS-Logo.png"></code>
 <code><img height="40" src="https://www.drupal.org/files/project-images/bootstrap-stack.png"></code>
-
+</p>
 ## Connect with me:
 
 <p align="center">
