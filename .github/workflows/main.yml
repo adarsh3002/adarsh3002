@@ -1,75 +1,66 @@
-# GitHub Action for generating a contribution graph with a snake eating your contributions.
-name: Generate Snake
+name: Snake Contribution Generator
 
-# Controls when the action will run.
 on:
   schedule:
-    # every 12 hours
-    - cron: "0 */6 * * *"
-
-  # This command allows us to run the Action automatically from the Actions tab.
+    - cron: "0 0 * * *"   # once daily
   workflow_dispatch:
 
-  # Also run on every push on the master branch
-  push:
-    branches:
-      - main
+# Prevent race conditions
+concurrency:
+  group: snake-generation
+  cancel-in-progress: true
 
-# The sequence of runs in this workflow:
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  generate-and-deploy:
+    name: Generate & Deploy Snake Assets
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      - name: Clone repo
-        uses: actions/checkout@v4
+    permissions:
+      contents: write   # required ONLY for gh-pages
 
-      - name: Generate the snake files in './dist/'
+    env:
+      OUTPUT_DIR: dist
+
+    steps:
+      # 1. Checkout (read-only usage)
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      # 2. Generate Assets (pure function step)
+      - name: Generate Snake Assets
+        id: generate
         uses: Platane/snk@v3
-        id: snake-gif
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/github-contribution-grid-snake.gif?color_snake=orange&color_dots=#52BE80,#27AE60,#229954,#1E8449,#196F3D
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            ${{ env.OUTPUT_DIR }}/snake.svg
+            ${{ env.OUTPUT_DIR }}/snake-dark.svg?palette=github-dark
+            ${{ env.OUTPUT_DIR }}/snake.gif?color_snake=orange&color_dots=#52BE80,#27AE60,#229954,#1E8449,#196F3D
 
-      - name: Show build status
-        run: git status
-
-      - name: Deploy
+      # 3. Validate Output (defensive programming)
+      - name: Validate Generated Files
         run: |
-
-        
-        
-          # git config --global user.name 'github-actions[bot]' && \
-          # git config --global user.email 'github-actions[bot]@users.noreply.github.com' && \
-          # # Error fix: https://stackoverflow.com/questions/62753648/rpc-failed-http-400-curl-22-the-requested-url-returned-error-400-bad-request
-          # git config --global http.postBuffer 524288000 && \
-          # git add . && \
-          # git commit --no-verify --signoff --author "${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>" -m "Deploy generated images"
-          # git push -fu "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY" HEAD:main --atomic
-
-
-
-
-          # Set up Git configuration
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git config --global http.postBuffer 524288000
-          
-          # Check if there are any changes to commit
-          if [ -n "$(git status --porcelain)" ]; then
-            # There are changes, proceed with commit and push
-          git add .
-          git commit --no-verify --signoff --author "adarsh3002 <adarsh3002@users.noreply.github.com>" -m "Deploy generated images"
-          git push -fu "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY" HEAD:main --atomic
-          else
-          # No changes, skipping commit
-          echo "No changes to deploy"
+          set -e
+          if [ ! -d "${OUTPUT_DIR}" ]; then
+            echo "Output directory missing"
+            exit 1
           fi
+
+          file_count=$(ls -1 ${OUTPUT_DIR} | wc -l)
+          if [ "$file_count" -eq 0 ]; then
+            echo "No files generated"
+            exit 1
+          fi
+
+      # 4. Deploy (isolated artifact publishing)
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{ env.OUTPUT_DIR }}
+          publish_branch: gh-pages
+          force_orphan: true
+          user_name: "github-actions[bot]"
+          user_email: "41898282+github-actions[bot]@users.noreply.github.com"
