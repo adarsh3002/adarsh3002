@@ -1,3 +1,13 @@
+<!-- ===================== AI HERO HEADER ===================== -->
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:2c5364,100:00c6ff&height=220&section=header&text=Adarsh%20Kumar&fontSize=45&fontAlignY=40&desc=AI-Native%20Backend%20Engineer%20|%20System%20Designer&descAlignY=65&animation=fadeIn"/>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3000&color=00C6FF&center=true&vCenter=true&width=850&lines=Building+Scalable+Backend+Systems;Clean+Architecture+Advocate;FastAPI+%7C+Spring+Boot+%7C+Cloud+Native;AI+Platforms+%7C+High+Performance+Systems;Turning+Ideas+Into+Production+Systems"/>
+</p>
+
 <a href="#"><img width="100%" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/79731568097599.5b50bca477735.jpg"/></a>
 
 <h1 align="center">Hi 👋, I'm ADARSH KUMAR</h1>
@@ -5,7 +15,7 @@
 
 ## About Me
 
-- 📚 Language preferences: **C++**, **JavaScript** and **Python**.
+- 📚 Language preferences: **Java** ,**C++**, **JavaScript** and **Python**.
 
 - 🌱 I’m currently into **competitive coding** and learning **WEB3**
 
@@ -62,6 +72,13 @@
 <code><img height="40" src="https://logos-world.net/wp-content/uploads/2021/08/Amazon-Web-Services-AWS-Logo.png"></code>
 <code><img height="40" src="https://www.drupal.org/files/project-images/bootstrap-stack.png"></code>
 </p>
+
+# 🧰 TECH STACK
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=java,python,cpp,js,ts,react,nodejs,fastapi,spring,postgres,mongodb,docker,kubernetes,aws,azure,gcp,git" />
+</p>
+
 ## Connect with me:
 
 <p align="center">
