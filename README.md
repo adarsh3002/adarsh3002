@@ -12,7 +12,7 @@
 
 <h1 align="center">Hi 👋, I'm ADARSH KUMAR</h1>
 <p align="center">
-  <b>Backend Engineer @ Neuron7.ai | IIIT Lucknow '25 | System Design Enthusiast</b>
+  <b>Backend Engineer | IIIT Lucknow '25 | System Design Enthusiast</b>
 </p>
 
 ## About Me
