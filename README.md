@@ -11,7 +11,9 @@
 <a href="#"><img width="100%" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/79731568097599.5b50bca477735.jpg"/></a>
 
 <h1 align="center">Hi 👋, I'm ADARSH KUMAR</h1>
-<h3 align="center">IIITL'25 | Full Stack Web Developer | Competitive Coder</h3>
+<p align="center">
+  <b>Backend Engineer @ Neuron7.ai | IIIT Lucknow '25 | System Design Enthusiast</b>
+</p>
 
 ## About Me
 
@@ -54,7 +56,7 @@
 
 <br>
 
-## **TechStack:**
+## **🧰 TechStack:**
 <p align="center">
 <code><img height="40" src="https://i.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.webp"></code>
 <code><img height="40" src="https://i.giphy.com/media/fsEaZldNC8A1PJ3mwp/giphy.webp"></code>
@@ -73,11 +75,6 @@
 <code><img height="40" src="https://www.drupal.org/files/project-images/bootstrap-stack.png"></code>
 </p>
 
-# 🧰 TECH STACK
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=java,python,cpp,js,ts,react,nodejs,fastapi,spring,postgres,mongodb,docker,kubernetes,aws,azure,gcp,git" />
-</p>
 
 ## Connect with me:
 
